@@ -47,7 +47,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return true;
     }
 
-    public boolean insertTrips(int id,String name,String from,String to,String date, String time, String seat1,String seat2,String seat3,String seat4, String cclass)
+    public boolean insertTrips(String id,String name,String from,String to,String date, String time, String seat1,String seat2,String seat3,String seat4, String cclass)
     {
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues contentValues=new ContentValues();

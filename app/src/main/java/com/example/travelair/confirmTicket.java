@@ -83,9 +83,9 @@ public class confirmTicket extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String id = SaveSharedPreference.getId(getApplicationContext());
-
-                Boolean isInserted = db.insertTrips(Integer.parseInt(id),flightName, From, To, dateText.getText().toString(), timeText, seat1, seat2, seat3, seat4, CClass);
+                String userID = SaveSharedPreference.getId(getApplicationContext());
+                //Toast.makeText(confirmTicket.this, id, Toast.LENGTH_SHORT).show();
+                Boolean isInserted = db.insertTrips(userID,flightName, From, To, "", timeText, seat1, seat2, seat3, seat4, CClass);
                 if(isInserted) {
                     Snackbar.make(v, "Ticket Booked", Snackbar.LENGTH_LONG).setAction("Action", null).show();
                     startActivity(new Intent(getApplicationContext(), travel.class));
@@ -93,6 +93,7 @@ public class confirmTicket extends AppCompatActivity {
                 else{
                     Toast.makeText(confirmTicket.this, "Failed", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
     }
