@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "325673143447",
+    "firebase_url": "https://medialabs-e346d.firebaseio.com",
+    "project_id": "medialabs-e346d",
+    "storage_bucket": "medialabs-e346d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325673143447:android:08dd1a5d6709f169ee6dd2",
+        "android_client_info": {
+          "package_name": "com.example.travelair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325673143447-ivupcm22mqmd8708l045p9evk0jk13or.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travelair",
+            "certificate_hash": "e23ed6641de74f419e2e4f6267f4be8b8c424af5"
+          }
+        },
+        {
+          "client_id": "325673143447-4r07640vmacbaugmhv30k7ov7cq3cetv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdClLDCUovh66kRpo4tZktXu7XIWFPE3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325673143447-4r07640vmacbaugmhv30k7ov7cq3cetv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

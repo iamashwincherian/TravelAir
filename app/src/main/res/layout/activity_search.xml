@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appTheme"
+    tools:context=".search">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        android:layout_marginTop="-151dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="151dp">
+
+            <RelativeLayout
+                android:id="@+id/flight1"
+                android:layout_width="331dp"
+                android:layout_height="193dp"
+                android:background="@drawable/flight_item">
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="21dp"
+                    android:text="₹ 5400"
+                    android:textColor="#404040"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/fromText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flightNameText1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="8dp"
+                    android:text="From"
+                    android:textColor="@color/blueText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/toText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flightNameText1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="To"
+                    android:textColor="@color/redText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/flightNameText1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    app:srcCompat="@drawable/plane_alone" />
+
+                <TextView
+                    android:id="@+id/flightNameText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="INDIGO AIR"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/timeText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fromText"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="3dp"
+                    android:text="1 : 00 am"
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toText"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="2: 30 am"
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flight2"
+                android:layout_width="331dp"
+                android:layout_height="193dp"
+                android:background="@drawable/flight_item">
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="21dp"
+                    android:text="₹ 7430"
+                    android:textColor="#404040"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/fromText21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flight_name2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="12dp"
+                    android:text="From"
+                    android:textColor="@color/blueText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/toText21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flight_name2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="To"
+                    android:textColor="@color/redText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/flight_name2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    app:srcCompat="@drawable/plane_alone" />
+
+                <TextView
+                    android:id="@+id/flight_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="SPICE JET"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/timeText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fromText21"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="3 : 00 am"
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/textView213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toText21"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="4: 30 am"
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flight3"
+                android:layout_width="331dp"
+                android:layout_height="193dp"
+                android:background="@drawable/flight_item">
+
+                <TextView
+                    android:id="@+id/price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView34"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="21dp"
+                    android:text="₹ 6880"
+                    android:textColor="#404040"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/fromText31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flight_name3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="12dp"
+                    android:text="From"
+                    android:textColor="@color/blueText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/toText31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flight_name3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="To"
+                    android:textColor="@color/redText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/flight_name3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    app:srcCompat="@drawable/plane_alone" />
+
+                <TextView
+                    android:id="@+id/flight_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="AIR INDIA"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/timeText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fromText31"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="8 : 40 am"
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/textView313"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toText31"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="10: 30 am"
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flight4"
+                android:layout_width="331dp"
+                android:layout_height="193dp"
+                android:background="@drawable/flight_item">
+
+                <TextView
+                    android:id="@+id/price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView44"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="21dp"
+                    android:text="₹ 9100"
+                    android:textColor="#404040"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/fromText41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flight_name4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="12dp"
+                    android:text="From"
+                    android:textColor="@color/blueText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/toText41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flight_name4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="To"
+                    android:textColor="@color/redText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <ImageView
+                    android:id="@+id/imageView44"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/flight_name4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    app:srcCompat="@drawable/plane_alone" />
+
+                <TextView
+                    android:id="@+id/flight_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="JET AIRWAYS"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/timeText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fromText41"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="12:15 pm "
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/textView413"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toText41"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="1 : 45 pm "
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flight5"
+                android:layout_width="331dp"
+                android:layout_height="193dp"
+                android:background="@drawable/flight_item">
+
+                <TextView
+                    android:id="@+id/price5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView54"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="127dp"
+                    android:layout_marginLeft="127dp"
+                    android:layout_marginTop="21dp"
+                    android:text="₹ 6800"
+                    android:textColor="#404040"
+                    android:textSize="24dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/fromText51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flight_name5"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="12dp"
+                    android:text="From"
+                    android:textColor="@color/blueText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/toText51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/flight_name5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="To"
+                    android:textColor="@color/redText"
+                    android:textSize="30dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/flight_name5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    app:srcCompat="@drawable/plane_alone" />
+
+                <TextView
+                    android:id="@+id/flight_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="GO AIR"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/timeText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fromText51"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:text="5 : 00 pm"
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+                <TextView
+                    android:id="@+id/textView513"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toText51"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginRight="31dp"
+                    android:text="8 : 00 pm"
+                    android:textColor="@color/greyText"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/open_sans_semibold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/search_circle_bg"
+        android:paddingBottom="-20dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/logo_small" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="278dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/back_button_dark" />
+
+
+</RelativeLayout>

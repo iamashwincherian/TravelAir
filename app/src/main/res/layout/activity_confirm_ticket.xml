@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appTheme"
+    tools:context=".confirmTicket">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/search_circle_bg"
+        android:paddingBottom="-20dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/logo_small" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="278dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/confirm_button" />
+
+    <RelativeLayout
+        android:id="@+id/relTicket"
+        android:layout_width="339dp"
+        android:layout_height="478dp"
+        android:layout_below="@+id/rel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ticket_background">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="257dp"
+            android:layout_height="53dp"
+            android:layout_below="@+id/flightNameText1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/barcode" />
+
+        <TextView
+            android:id="@+id/flightNameText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="INDIGO AIR"
+            android:textColor="#404040"
+            android:textSize="25dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/imageView7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/plane_alone" />
+
+        <TextView
+            android:id="@+id/fromText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView7"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="15dp"
+            android:text="BOM"
+            android:textColor="@color/blueText"
+            android:textSize="30dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/toText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView7"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:text="BLR"
+            android:textColor="@color/redText"
+            android:textSize="30dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="2dp"
+            android:text="04/02/19"
+            android:textColor="#B4B4B4"
+            android:textSize="18dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fromText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:text="8 : 00 am"
+            android:textColor="#B4B4B4"
+            android:textSize="18dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="13dp"
+            app:srcCompat="@drawable/seat_filled" />
+
+        <TextView
+            android:id="@+id/seatNoText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView9"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/imageView10"
+            android:layout_toRightOf="@+id/imageView10"
+            android:text="G4"
+            android:textSize="20dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/seatNoText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seatNoText1"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-6dp"
+            android:layout_toEndOf="@+id/imageView10"
+            android:layout_toRightOf="@+id/imageView10"
+            android:text="G4"
+            android:textSize="20dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/seatNoText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView9"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/seatNoText1"
+            android:layout_toRightOf="@+id/seatNoText1"
+            android:text="G4"
+            android:textSize="20dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/seatNoText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seatNoText2"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="-6dp"
+            android:layout_toEndOf="@+id/seatNoText1"
+            android:layout_toRightOf="@+id/seatNoText1"
+            android:text="G4"
+            android:textSize="20dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/cclassText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:text="Economy"
+            android:textSize="20dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seatNoText1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView25"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:id="@+id/totalPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView12"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:text="₹ 5430"
+            android:textColor="#404040"
+            android:textSize="30dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView12"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="12dp"
+            android:text="Total : "
+            android:textColor="#404040"
+            android:textSize="30dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView11"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="10dp"
+            android:text="Fare : "
+            android:textColor="#B4B4B4"
+            android:textSize="15dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView23"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:text="Tax &amp; Other Charges : "
+            android:textColor="#B4B4B4"
+            android:textSize="15dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView11"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:text="₹ 5430"
+            android:textColor="#B4B4B4"
+            android:textSize="15dp"
+            app:fontFamily="@font/open_sans_semibold" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:text="₹ 50"
+            android:textColor="#B4B4B4"
+            android:textSize="15dp"
+            app:fontFamily="@font/open_sans_semibold" />
+    </RelativeLayout>
+
+</RelativeLayout>

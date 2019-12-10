@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appTheme"
+    tools:context=".Seat">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/search_circle_bg"
+        android:paddingBottom="-20dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/logo_small" />
+
+    </RelativeLayout>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/myEasyFlipView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        android:layout_marginTop="4dp"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipFrom="front"
+        app:flipType="horizontal">
+
+
+        <!-- Front Layout Goes Here -->
+
+        <RelativeLayout
+            android:id="@+id/proCard"
+            android:layout_width="301dp"
+            android:layout_height="442dp"
+            android:layout_below="@+id/rel"
+            android:layout_alignStart="@+id/myEasyFlipView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/acc_circle_bg">
+
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="281dp"
+                android:layout_height="52dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/logout" />
+
+            <ImageView
+                android:id="@+id/proPic"
+                android:layout_width="163dp"
+                android:layout_height="163dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proPic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="User Name"
+                android:textColor="#4B4B4B"
+                android:textSize="25dp"
+                app:fontFamily="@font/open_sans_semibold" />
+
+            <Button
+                android:id="@+id/editBtn"
+                android:layout_width="281dp"
+                android:layout_height="52dp"
+                android:layout_above="@+id/logoutBtn"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_profile" />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:text="User Email"
+                android:textColor="#ABABAB"
+                android:textSize="15dp"
+                app:fontFamily="@font/open_sans_semibold" />
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:text="User Phone"
+                android:textColor="#ABABAB"
+                android:textSize="15dp"
+                app:fontFamily="@font/open_sans_semibold" />
+
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:text="User Age"
+                android:textColor="#ABABAB"
+                android:textSize="15dp"
+                app:fontFamily="@font/open_sans_semibold" />
+
+
+        </RelativeLayout>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:background="@drawable/nav_bg"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relTrips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/myTripsBtn"
+                android:layout_width="60dp"
+                android:layout_height="46dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/nav_trips_unfilled" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="42dp"
+                android:layout_height="47dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/nav_home_unfilled2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relAcc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="83dp"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/nav_acc_filled" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

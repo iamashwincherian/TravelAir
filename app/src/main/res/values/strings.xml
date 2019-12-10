@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Travel Air</string>
+    <string-array name="places">
+        <item>BLR</item>
+        <item>BOM</item>
+        <item>MAA</item>
+        <item>COK</item>
+        <item>DEL</item>
+    </string-array>
+    <string-array name="Class">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>First Class</item>
+    </string-array>
+</resources>

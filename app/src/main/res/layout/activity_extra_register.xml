@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appTheme"
+    tools:context=".extraRegister">
+
+    <RelativeLayout
+        android:layout_width="237dp"
+        android:layout_height="277dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bubble_gb"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="225dp"
+        android:layout_height="226dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bubble_bottom">
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="REGISTER"
+        android:textColor="#4b4b4b"
+        android:textSize="35sp"
+        app:fontFamily="@font/open_sans_semibold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Enter your Age and"
+        android:textColor="#4b4b4b"
+        android:textSize="17sp"
+        app:fontFamily="@font/open_sans_semibold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_marginLeft="50dp"
+        android:text="Phone Number"
+        android:textColor="#4b4b4b"
+        android:textSize="17sp"
+        app:fontFamily="@font/open_sans_semibold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView12"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/editPhone2"
+            android:layout_width="261dp"
+            android:layout_height="66dp"
+            android:layout_below="@+id/editAge2"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/phone_textfield"
+            android:ems="10"
+            android:inputType="phone"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingRight="20dp"
+            android:textColor="#4B4B4B" />
+
+        <EditText
+            android:id="@+id/editAge2"
+            android:layout_width="95dp"
+            android:layout_height="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/age_textfield"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:paddingRight="20dp"
+            android:textColor="#4B4B4B" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registerBtn2"
+        android:layout_width="278dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/register_button_dark" />
+
+</RelativeLayout>
